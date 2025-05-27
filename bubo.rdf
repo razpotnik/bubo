@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/razpotnik/bubo#"
+     xml:base="https://github.com/razpotnik/bubo"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bubo="https://github.com/razpotnik/bubo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/razpotnik/bubo">
+        <rdfs:comment>BuBO - Build graph Based Ontology: An OWL ontology of AOSP build system dependencies.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#BuildsModule -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/razpotnik/bubo#BuildsModule">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/razpotnik/bubo#BuildFile"/>
+        <rdfs:range rdf:resource="https://github.com/razpotnik/bubo#Module"/>
+        <rdfs:comment>BuildsModule represents a build file building a module.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#DependsOn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/razpotnik/bubo#DependsOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment>DependsOn is the main relationship of BuBO, representing a dependency between two classes (a module or build file, which can depend on build files or libraries).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#filePath -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/razpotnik/bubo#filePath">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/razpotnik/bubo#BuildFile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#AndroidLibrary -->
+
+    <owl:Class rdf:about="https://github.com/razpotnik/bubo#AndroidLibrary">
+        <rdfs:subClassOf rdf:resource="https://github.com/razpotnik/bubo#Library"/>
+        <owl:disjointWith rdf:resource="https://github.com/razpotnik/bubo#JavaLibrary"/>
+        <rdfs:comment>AndroidLibrary represents an Android library.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#BlueprintFile -->
+
+    <owl:Class rdf:about="https://github.com/razpotnik/bubo#BlueprintFile">
+        <rdfs:subClassOf rdf:resource="https://github.com/razpotnik/bubo#BuildFile"/>
+        <owl:disjointWith rdf:resource="https://github.com/razpotnik/bubo#Makefile"/>
+        <rdfs:comment>BlueprintFile represents a Blueprint file, commonly Android.bp, used by Soong to define modules.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#BuildFile -->
+
+    <owl:Class rdf:about="https://github.com/razpotnik/bubo#BuildFile">
+        <rdfs:comment>BuildFile represents a build configuration script, e.g. Makefile, Blueprint file, in AOSP.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#JavaLibrary -->
+
+    <owl:Class rdf:about="https://github.com/razpotnik/bubo#JavaLibrary">
+        <rdfs:subClassOf rdf:resource="https://github.com/razpotnik/bubo#Library"/>
+        <rdfs:comment>JavaLibrary represents a Java library.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#Library -->
+
+    <owl:Class rdf:about="https://github.com/razpotnik/bubo#Library">
+        <rdfs:comment>Library represents a library. It has two types, Android libraries and Java libraries.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#Makefile -->
+
+    <owl:Class rdf:about="https://github.com/razpotnik/bubo#Makefile">
+        <rdfs:subClassOf rdf:resource="https://github.com/razpotnik/bubo#BuildFile"/>
+        <rdfs:comment>Makefile represents a Makefile, used in AOSP by Make/Kati to define build rules and handle dependencies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo#Module -->
+
+    <owl:Class rdf:about="https://github.com/razpotnik/bubo#Module">
+        <rdfs:comment>Module represents an Android module</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/razpotnik/bubo#BuildFile"/>
+            <rdf:Description rdf:about="https://github.com/razpotnik/bubo#Library"/>
+            <rdf:Description rdf:about="https://github.com/razpotnik/bubo#Module"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
