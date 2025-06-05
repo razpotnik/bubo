@@ -1,0 +1,670 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/razpotnik/bubo/storagemanager-example#"
+     xml:base="https://github.com/razpotnik/bubo/storagemanager-example"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bubo="https://github.com/razpotnik/bubo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/razpotnik/bubo/storagemanager-example">
+        <owl:imports rdf:resource="https://github.com/razpotnik/bubo"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#StorageManager -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#StorageManager">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#Module"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/Android.mk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.activity_activity -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.activity_activity">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.activity_activity-nodeps"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.activity_activity-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.activity_activity-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat-nodeps"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat-resources"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.cursoradapter_cursoradapter"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.drawerlayout_drawerlayout"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat-resources"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.cursoradapter_cursoradapter"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.drawerlayout_drawerlayout"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat-resources -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat-resources">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-runtime -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-runtime">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-runtime-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-runtime-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-runtime-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core-nodeps"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.versionedparcelable_versionedparcelable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.versionedparcelable_versionedparcelable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.cursoradapter_cursoradapter -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.cursoradapter_cursoradapter">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.cursoradapter_cursoradapter-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.cursoradapter_cursoradapter-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.cursoradapter_cursoradapter-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.drawerlayout_drawerlayout -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.drawerlayout_drawerlayout">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.activity_activity"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment-nodeps"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.loader_loader"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.viewpager_viewpager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.activity_activity"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.loader_loader"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.viewpager_viewpager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-preference-v14 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-preference-v14">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.preference_preference"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-core-ui -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-core-ui">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-core-utils -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-core-utils">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-v4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-v4">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-core-ui"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-core-utils"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.media_media"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate-nodeps"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel-savedstate-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.loader_loader -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.loader_loader">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.loader_loader-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.loader_loader-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.loader_loader-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-livedata-core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-viewmodel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.media_media -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.media_media">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.media_media-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.media_media-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.media_media-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.preference_preference -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.preference_preference">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.preference_preference-nodeps"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.preference_preference-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.preference_preference-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.fragment_fragment"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.savedstate_savedstate-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.arch.core_core-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.versionedparcelable_versionedparcelable -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.versionedparcelable_versionedparcelable">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.versionedparcelable_versionedparcelable-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.versionedparcelable_versionedparcelable-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.versionedparcelable_versionedparcelable-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.collection_collection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.viewpager_viewpager -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.viewpager_viewpager">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.viewpager_viewpager-nodeps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#androidx.viewpager_viewpager-nodeps -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#androidx.viewpager_viewpager-nodeps">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#AndroidLibrary"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.core_core"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.customview_customview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#frameworks/base/packages/SettingsLib/common.mk -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#frameworks/base/packages/SettingsLib/common.mk">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#Makefile"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.annotation_annotation"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-preference-v14"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-support-v4"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-common"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.lifecycle_lifecycle-runtime"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.preference_preference"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/Android.mk -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/Android.mk">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#Makefile"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.appcompat_appcompat"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.legacy_legacy-preference-v14"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.preference_preference"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#androidx.recyclerview_recyclerview"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/CleanSpec.mk"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/robotests/Android.mk"/>
+        <bubo:DependsOn rdf:resource="https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/tests/Android.mk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/CleanSpec.mk -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/CleanSpec.mk">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#Makefile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/robotests/Android.mk -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/robotests/Android.mk">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#Makefile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/tests/Android.mk -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/razpotnik/bubo/storagemanager-example#packages/apps/StorageManager/tests/Android.mk">
+        <rdf:type rdf:resource="https://github.com/razpotnik/bubo#Makefile"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
